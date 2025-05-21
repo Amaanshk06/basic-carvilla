@@ -9,7 +9,7 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body>
-    <a class="floating-btn" href="">/\</a>
+    <a class="floating-btn" href="#" onClick={scrollToTop}>/\</a>
     <header>
         <div class="custom-container">
             <div class="row">
@@ -207,13 +207,8 @@
         </div>
     </footer>
 </body>
-<script src="./js/custom.js">
-    const toggle = document.getElementById('menu-toggle');
-    const nav = document.getElementById('nav-links');
-
-    toggle.addEventListener('click', () => {
-        nav.classList.toggle('active');
-    });
+<script src="./index.js">
+    
 
 </script>
 </html>

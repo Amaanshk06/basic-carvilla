@@ -1,7 +1,6 @@
 * {
     padding: 0px;
     margin: 0px;
-    /* overflow-x: hidden; */
 }
 
 section {
@@ -243,29 +242,50 @@ button:hover {
 
 /* Footer Section */
 footer {
-    background-color: #2A2D54;
-    align-content: center;
-    font-size: 12px;
-    padding: 10px 0;
-    height: 50px;
+  background-color: #2A2D54;
+  padding: 10px;
+  height: 60px; /* Increased height for better spacing */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px; /* Added padding to give it more space */
 }
 
 .footer-p {
-    color: #A8A9BF;
-    padding-top: 6px;
+  color: #A8A9BF;
+  font-size: 14px;
+  padding-top: 5px;
+  flex-grow: 1; /* Ensures that the text will take available space and push icons to the right */
 }
 
+/* Align icons to the right */
 .footer-icons {
-    text-align: right;
+  display: flex;
+  justify-content: flex-end; /* Aligns icons to the right */
+  gap: 20px; /* Adds space between icons */
 }
 
+/* Footer Icons */
 .footer-icons img {
-    padding: 8px;
-    height: 30px;
+  padding: 10px;
+  height: 40px;
+  transition: transform 0.3s ease, filter 0.3s ease, background-color 0.3s ease, transform 0.2s ease;
+  will-change: transform;
+  position: relative;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+  background-color: transparent; /* Default background */
+}
+
+.footer-icons img:hover {
+  transform: translateY(-10px) scale(1.1); /* Slightly scale the image and move it up */
+  filter: brightness(1.2); /* Increases brightness on hover */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Adds more shadow to give the "lifted" effect */
+  background-color: rgba(78, 79, 250, 0.3); /* New background color when hovered */
 }
 
 .footer-icons a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 /* Responsive Media Queries */
